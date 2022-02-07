@@ -1,0 +1,308 @@
+body {
+    height: 100vh;
+}
+
+.title {
+    color: rgb(14, 185, 56); 
+    text-align: center; 
+    letter-spacing: 5px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: rgb(14, 185, 56);
+    height: 10vh;
+    }
+
+ul li {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    width: 100vh;
+    height: 15px;
+    padding: 15px;
+    text-align: center;
+
+}
+ul li:hover {
+    background-color: black;
+    color:rgb(14, 185, 56);
+
+}
+
+.menuFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+img { 
+    size-adjust: 10vh;
+    margin: 10px 5px ;
+    padding: 20px;
+    background-color: white;
+    max-width: 90%;
+    margin: center;
+
+
+}
+input:hover {
+    background-color: rgb(14, 185, 56);
+    color: black;
+}
+form {
+    background-color: white;
+    padding: 20px;
+    font-size: large;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    margin bottom: 20px;
+}
+.gracias { text-align: center;}
+
+footer {
+    padding: 10px;
+    background-color: thistle;
+    height: 20px;
+
+}
+
+
+
+/*GRID*/
+
+#gridAreas {display: grid;
+    grid-template-areas: 
+    "navega navega"
+    "titulo titulo"
+    "imagen publicidad"
+    "footer footer";
+
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 85% 15%;
+    grid column-gap: 5px;
+    grid-row-gap: 5px; 
+}
+
+    header { 
+        grid-area: navega;
+    
+    }
+
+ #titulo {
+    grid-area: titulo;
+}
+ 
+#imagen {
+    grid-area: imagen;
+}
+
+aside {
+    grid-area: publicidad;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/*MEDIA QUERIES*/
+
+/* DESKTOP */
+@media (min-width: 1024px)
+
+{body {
+    height: 100vh;
+}
+}
+
+/*TABLET*/ 
+@media (min-width:481px) and (max-width: 1023px)
+{body {height: 100vh;
+    background-color: turquoise;
+    }
+    .title {
+        color: rgb(14, 185, 56); 
+        text-align: center; 
+        letter-spacing: 5px; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+    
+    ul {
+        list-style-type: none;
+        background-color: rgb(14, 185, 56);
+        height: 10%;
+        width: 85%;
+        
+    
+    
+    }
+    ul li {
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
+        width: 85%;
+        height: 10px;
+        padding: 15px;
+        text-align: center;
+    
+    }
+    ul li:hover {
+        background-color: black;
+        color:rgb(14, 185, 56);
+    
+    }
+    
+    .menuFlex {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    img { 
+        size-adjust: 10vh;
+        margin: 10px 5px ;
+        padding: 20px;
+        background-color: white;
+        max-width: 90%;
+        margin: center;
+    
+    
+    }
+    
+    #gridAreas {display: grid;
+        grid-template-areas: 
+        "navega"
+        "titulo"
+        "imagen"
+        "publicidad"
+        "footer";
+    
+        grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-row-gap: 0px; 
+    }
+    
+        header { 
+            grid-area: navega;
+        
+        }
+    
+     #titulo {
+        grid-area: titulo;
+    }
+     
+    #imagen {
+        grid-area: imagen;
+    }
+    
+
+    aside {
+        grid-area: publicidad;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+ 
+
+
+/*SMARTPHONE*/ 
+
+@media (max-width: 480px)
+{body {height: 100vh;
+    background-color: tomato;
+    }
+}
+
+.title {
+    color: rgb(14, 185, 56); 
+    text-align: center; 
+    letter-spacing: 5px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: rgb(14, 185, 56);
+    height: 10%;
+    width: 85%;
+    
+
+
+}
+ul li {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    width: 85%;
+    height: 10px;
+    padding: 15px;
+    text-align: center;
+
+}
+ul li:hover {
+    background-color: black;
+    color:rgb(14, 185, 56);
+
+}
+
+.menuFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+img { 
+    size-adjust: 10vh;
+    margin: 10px 5px ;
+    padding: 20px;
+    background-color: white;
+    max-width: 90%;
+    margin: center;
+
+
+}
+
+#gridAreas {display: grid;
+    grid-template-areas: 
+    "navega"
+    "titulo"
+    "imagen"
+    "publicidad"
+    "footer";
+
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-row-gap: 0px; 
+}
+
+    header { 
+        grid-area: navega;
+    
+    }
+
+ #titulo {
+    grid-area: titulo;
+}
+ 
+#imagen {
+    grid-area: imagen;
+}
+
+
+aside {
+    grid-area: publicidad;
+}
+
+footer {
+    grid-area: footer;
+}

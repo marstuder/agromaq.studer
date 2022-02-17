@@ -1,0 +1,60 @@
+
+
+// aplicando SCSS 
+
+// genero una variable que aplico a modo de ejemplo
+$color: rgb(145, 255, 0); 
+
+body { height: 100vh; }
+// realizo el NESTIGN con el nav 
+ul {
+    list-style-type: none;
+    background-color: $color;
+    height: 10vh;
+
+    li{ 
+        background-color: $color;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    width: 100vh;
+    height: 15px;
+    padding: 15px;
+    text-align: center;
+
+    // aplico una &
+&:hover {
+    background-color: black;
+    color: $color;
+}
+    }
+}
+
+.menuFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+img { 
+    size-adjust: 10vh;
+    margin: 10px 5px ;
+    padding: 20px;
+    background-color: $color;
+    max-width: 90%;
+    margin: center;
+    }
+
+    .title {
+        color: black; 
+        text-align: center; 
+        letter-spacing: 5px; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 45px;
+    }
+
+    footer {
+        padding: 10px;
+        background-color: $color;
+        height: 20px;
+    
+    }
